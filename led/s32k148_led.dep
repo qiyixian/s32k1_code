@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>5</fileVersion>
+    <fileChecksum>2214425081</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\Src\SDK\platform\drivers\src\pins\pins_driver.c</file>
+            <file>$PROJ_DIR$\Src\SDK\platform\drivers\src\clock\S32K1xx\clock_S32K1xx.c</file>
+            <file>$PROJ_DIR$\Src\SDK\platform\devices\startup.c</file>
+            <file>$PROJ_DIR$\Src\SDK\platform\drivers\src\interrupt\interrupt_manager.c</file>
+            <file>$PROJ_DIR$\Src\board\clock_config.c</file>
+            <file>$PROJ_DIR$\Src\board\pin_mux.c</file>
+            <file>$PROJ_DIR$\Src\Project_Settings\Startup_Code\startup_S32K144.s</file>
+            <file>$PROJ_DIR$\Src\SDK\platform\devices\S32K144\startup\system_S32K144.c</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\Src\Project_Settings\Linker_Files\S32K144_64_flash.icf</file>
+            <file>$PROJ_DIR$\Src\SDK\platform\devices\startup.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Src\SDK\platform\drivers\inc\interrupt_manager.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Src\SDK\platform\drivers\src\interrupt\interrupt_manager.o</file>
+            <file>$PROJ_DIR$\Src\SDK\platform\devices\device_registers.h</file>
+            <file>$PROJ_DIR$\Src\SDK\platform\drivers\src\clock\S32K1xx\pmc_hw_access.h</file>
+            <file>$PROJ_DIR$\Src\SDK\platform\devices\S32K144\include\S32K144_features.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Src\SDK\platform\drivers\src\pins\pins_port_hw_access.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Src\main.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\Src\SDK\platform\drivers\src\pins\pins_driver.o</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
+            <file>$PROJ_DIR$\Src\SDK\platform\drivers\src\clock\S32K1xx\smc_hw_access.h</file>
+            <file>$PROJ_DIR$\Src\SDK\platform\devices\common\s32_core_cm4.h</file>
+            <file>$PROJ_DIR$\Src\SDK\platform\devices\devassert.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\Src\board\sdk_project_config.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\s32k148_led.out</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\s32k148_led.srec</file>
+            <file>$PROJ_DIR$\Debug\Obj\Src\SDK\platform\devices\startup.o</file>
+            <file>$PROJ_DIR$\Src\SDK\platform\drivers\src\pins\pins_port_hw_access.h</file>
+            <file>$PROJ_DIR$\Src\SDK\platform\drivers\inc\clock.h</file>
+            <file>$PROJ_DIR$\Src\SDK\platform\devices\status.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Src\Project_Settings\Startup_Code\startup_S32K144.o</file>
+            <file>$PROJ_DIR$\Src\SDK\platform\drivers\src\clock\S32K1xx\clock_S32K1xx.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Src\SDK\platform\drivers\src\clock\S32K1xx\clock_S32K1xx.o</file>
+            <file>$PROJ_DIR$\Src\main.c</file>
+            <file>$PROJ_DIR$\Src\SDK\platform\drivers\src\pins\pins_port_hw_access.c</file>
+            <file>$PROJ_DIR$\Src\SDK\platform\drivers\inc\pins_driver.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Src\board\pin_mux.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\Src\board\clock_config.o</file>
+            <file>$PROJ_DIR$\Src\board\pin_mux.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Src\SDK\platform\devices\S32K144\startup\system_S32K144.o</file>
+            <file>$PROJ_DIR$\Src\SDK\platform\devices\S32K144\include\S32K144.h</file>
+            <file>$PROJ_DIR$\Src\SDK\platform\devices\S32K144\startup\system_S32K144.h</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\Src\SDK\platform\drivers\src\clock\S32K1xx\scg_hw_access.h</file>
+            <file>$PROJ_DIR$\Debug\List\s32k148_led.map</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\Src\board\clock_config.h</file>
+            <file>$PROJ_DIR$\Src\SDK\platform\drivers\src\clock\S32K1xx\pcc_hw_access.h</file>
+            <file>$PROJ_DIR$\Src\SDK\platform\drivers\src\pins\pins_gpio_hw_access.h</file>
+            <file>$PROJ_DIR$\Src\SDK\platform\drivers\src\clock\S32K1xx\sim_hw_access.h</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\Src\SDK\platform\drivers\src\pins\pins_driver.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 22</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 15 25 48 20 27 19 12 54 30 17 26 38 57 43 39 9 35 33</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Src\SDK\platform\drivers\src\clock\S32K1xx\clock_S32K1xx.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 40</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 15 25 48 20 27 19 12 54 30 17 26 38 58 39 9 51 56 16 24 34 35 37 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Src\SDK\platform\devices\startup.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 32</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 11 20 27 19 12 54 30 15 25 48 17 26 38</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Src\SDK\platform\drivers\src\interrupt\interrupt_manager.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 14</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 13 15 25 48 20 27 19 12 54 30 17 26 38 11</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 29 52</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Src\board\clock_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 45</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 55 34 15 25 48 20 27 19 12 54 30 17 26 38 35 37</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Src\board\pin_mux.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 44</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 46 43 39 27 19 12 54 30 9 15 25 48 20 17 26 38 35</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Src\Project_Settings\Startup_Code\startup_S32K144.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 36</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Src\SDK\platform\devices\S32K144\startup\system_S32K144.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 47</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 15 25 48 20 27 19 12 54 30 17 26 38 49</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\s32k148_led.out</name>
+            <outputs>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 31</file>
+                </tool>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 52</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 10 45 40 14 21 44 22 18 32 36 47 50 8 23 53</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Src\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 21</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 28 55 34 15 25 48 20 27 19 12 54 30 17 26 38 35 37 46 43 39 9</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Src\SDK\platform\drivers\src\pins\pins_port_hw_access.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 18</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 33 43 39 27 19 12 54 30 9 15 25 48 20 17 26 38 35 57</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+</project>
