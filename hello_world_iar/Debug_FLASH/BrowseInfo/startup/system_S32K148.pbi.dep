@@ -1,0 +1,15 @@
+E:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\startup\system_S32K148.pbi: \
+  E:\Fork\s32k1_code\hello_world_iar\src\startup\system_S32K148.c \
+  E:\Fork\s32k1_code\hello_world_iar\src\startup\device_registers.h \
+  E:\Fork\s32k1_code\hello_world_iar\src\startup\common\s32_core_cm4.h \
+  E:\Fork\s32k1_code\hello_world_iar\src\startup\S32K144\include\S32K144.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\stdint.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\ycheck.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\yvals.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\DLib_Defaults.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\DLib_Config_Normal.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\DLib_Product.h \
+  E:\Fork\s32k1_code\hello_world_iar\src\startup\S32K144\include\S32K144_features.h \
+  E:\Fork\s32k1_code\hello_world_iar\src\startup\devassert.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\stdbool.h \
+  E:\Fork\s32k1_code\hello_world_iar\src\startup\system_S32K148.h

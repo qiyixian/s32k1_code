@@ -1,0 +1,61 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\XclFileGenerator.exe" $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$in
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\SourceIndexer.exe" $flags
+  depfile = $out.dep
+  description = IAR_NEW_TOOL+++INDEXER+++$out
+
+rule MAKEBROWSE
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\makeBrowseData.exe" $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out
+
+rule PDBLINK
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\PbdLink.exe" $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out
+
+
+
+#Build steps
+build E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\src\main.xcl : COMPILER_XCL 
+  xclcommand = -source_file E$:\Fork\s32k1_code\hello_world_iar\src\main.c -xcl_file E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\src\main.xcl -macro_file E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\src\main.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = E$:\Fork\s32k1_code\hello_world_iar\src\main.c -D CPU_S32K144HFT0VLLT -o E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\Obj\src --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 --debug --no_wrap_diagnostics -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -I E$:\Fork\s32k1_code\hello_world_iar\..\..\..\..\platform\drivers\inc\ -I E$:\Fork\s32k1_code\hello_world_iar\..\..\..\..\platform\devices\ -I E$:\Fork\s32k1_code\hello_world_iar\..\..\..\..\platform\devices\common\ -I E$:\Fork\s32k1_code\hello_world_iar\..\..\..\..\platform\devices\S32K144\include\ -I E$:\Fork\s32k1_code\hello_world_iar\src\ -On --predef_macros E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\src\main.tmp
+  rspfile_name = E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\src\main.xcl.rsp
+
+build E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\startup\startup.xcl : COMPILER_XCL 
+  xclcommand = -source_file E$:\Fork\s32k1_code\hello_world_iar\src\startup\startup.c -xcl_file E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\startup\startup.xcl -macro_file E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\startup\startup.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = E$:\Fork\s32k1_code\hello_world_iar\src\startup\startup.c -D CPU_S32K144HFT0VLLT -o E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\Obj\startup --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 --debug --no_wrap_diagnostics -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -I E$:\Fork\s32k1_code\hello_world_iar\..\..\..\..\platform\drivers\inc\ -I E$:\Fork\s32k1_code\hello_world_iar\..\..\..\..\platform\devices\ -I E$:\Fork\s32k1_code\hello_world_iar\..\..\..\..\platform\devices\common\ -I E$:\Fork\s32k1_code\hello_world_iar\..\..\..\..\platform\devices\S32K144\include\ -I E$:\Fork\s32k1_code\hello_world_iar\src\ -On --predef_macros E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\startup\startup.tmp
+  rspfile_name = E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\startup\startup.xcl.rsp
+
+build E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\startup\system_S32K148.xcl : COMPILER_XCL 
+  xclcommand = -source_file E$:\Fork\s32k1_code\hello_world_iar\src\startup\system_S32K148.c -xcl_file E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\startup\system_S32K148.xcl -macro_file E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\startup\system_S32K148.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = E$:\Fork\s32k1_code\hello_world_iar\src\startup\system_S32K148.c -D CPU_S32K144HFT0VLLT -o E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\Obj\startup --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 --debug --no_wrap_diagnostics -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -I E$:\Fork\s32k1_code\hello_world_iar\..\..\..\..\platform\drivers\inc\ -I E$:\Fork\s32k1_code\hello_world_iar\..\..\..\..\platform\devices\ -I E$:\Fork\s32k1_code\hello_world_iar\..\..\..\..\platform\devices\common\ -I E$:\Fork\s32k1_code\hello_world_iar\..\..\..\..\platform\devices\S32K144\include\ -I E$:\Fork\s32k1_code\hello_world_iar\src\ -On --predef_macros E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\startup\system_S32K148.tmp
+  rspfile_name = E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\startup\system_S32K148.xcl.rsp
+
+build E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\src\main.pbi : INDEXER E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\src\main.xcl |  $
+E$:\Fork\s32k1_code\hello_world_iar\src\main.c
+  flags = -out=E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\src\main.pbi -f E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\src\main.xcl
+
+build E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\startup\startup.pbi : INDEXER E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\startup\startup.xcl |  $
+E$:\Fork\s32k1_code\hello_world_iar\src\startup\startup.c
+  flags = -out=E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\startup\startup.pbi -f E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\startup\startup.xcl
+
+build E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\startup\system_S32K148.pbi : INDEXER E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\startup\system_S32K148.xcl |  $
+E$:\Fork\s32k1_code\hello_world_iar\src\startup\system_S32K148.c
+  flags = -out=E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\startup\system_S32K148.pbi -f E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\startup\system_S32K148.xcl
+
+build E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\hello_world_iar.pbw : MAKEBROWSE E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\hello_world_iar.pbd
+  flags = E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\hello_world_iar.pbd -output E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\hello_world_iar.pbw
+
+build E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\hello_world_iar.pbd : PDBLINK E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\src\main.pbi |  $
+E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\startup\startup.pbi $
+E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\startup\system_S32K148.pbi
+  flags = -M E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\hello_world_iar.pbd E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\src\main.pbi E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\startup\startup.pbi E$:\Fork\s32k1_code\hello_world_iar\Debug_FLASH\BrowseInfo\startup\system_S32K148.pbi
+

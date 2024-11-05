@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>5</fileVersion>
+    <fileChecksum>1346675430</fileChecksum>
+    <configuration>
+        <name>Debug_FLASH</name>
+        <outputs>
+            <file>$PROJ_DIR$\Debug_FLASH\Obj\src\main.o</file>
+            <file>$PROJ_DIR$\Debug_FLASH\Obj\startup\startup.o</file>
+            <file>$PROJ_DIR$\Debug_FLASH\Obj\startup\startup_S32K148.o</file>
+            <file>$PROJ_DIR$\Debug_FLASH\Exe\hello_world_IAR.elf</file>
+            <file>$PROJ_DIR$\Debug_FLASH\Obj\startup\system_S32K148.o</file>
+            <file>$PROJ_DIR$\src\startup\S32K144\include\S32K144.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\src\startup\startup.h</file>
+            <file>$PROJ_DIR$\src\startup\S32K144\include\S32K144_features.h</file>
+            <file>$PROJ_DIR$\src\startup\system_S32K148.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\src\startup\device_registers.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\src\startup\common\s32_core_cm4.h</file>
+            <file>$PROJ_DIR$\src\startup\devassert.h</file>
+            <file>$PROJ_DIR$\src\main.c</file>
+            <file>$PROJ_DIR$\src\startup\system_S32K148.c</file>
+            <file>$PROJ_DIR$\src\linker\S32K148_256_flash.icf</file>
+            <file>$PROJ_DIR$\src\startup\startup.c</file>
+            <file>$PROJ_DIR$\src\startup\startup_S32K148.s</file>
+            <file>$PROJ_DIR$\Debug_FLASH\List\hello_world_IAR.map</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 3 24</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug_FLASH\Exe\hello_world_IAR.elf</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 24</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 21 0 1 2 4</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\src\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 0</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\src\startup\system_S32K148.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 4</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12 17 5 16 15 6 10 11 14 8 18 13 9</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\src\startup\startup.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 1</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 7 16 15 6 10 11 14 12 17 5 8 18 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\src\startup\startup_S32K148.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 2</file>
+                </tool>
+            </outputs>
+        </file>
+    </configuration>
+    <configuration>
+        <name>Debug_RAM</name>
+        <outputs>
+            <file>$PROJ_DIR$\src\startup\S32K144\include\S32K144.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\src\startup\startup.h</file>
+            <file>$PROJ_DIR$\Debug_RAM\Obj\src\main.o</file>
+            <file>$PROJ_DIR$\src\startup\S32K144\include\S32K144_features.h</file>
+            <file>$PROJ_DIR$\Debug_RAM\Obj\startup\startup.o</file>
+            <file>$PROJ_DIR$\src\startup\system_S32K148.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\src\startup\device_registers.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$PROJ_DIR$\Debug_RAM\Obj\startup\startup_S32K148.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\Debug_RAM\Obj\startup\system_S32K148.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\src\startup\common\s32_core_cm4.h</file>
+            <file>$PROJ_DIR$\src\startup\devassert.h</file>
+            <file>$PROJ_DIR$\src\main.c</file>
+            <file>$PROJ_DIR$\src\startup\system_S32K148.c</file>
+            <file>$PROJ_DIR$\src\linker\S32K148_256_flash.icf</file>
+            <file>$PROJ_DIR$\Debug_RAM\List\hello_world_IAR.map</file>
+            <file>$PROJ_DIR$\Debug_RAM\Exe\hello_world_IAR.elf</file>
+            <file>$PROJ_DIR$\src\startup\startup.c</file>
+            <file>$PROJ_DIR$\src\startup\startup_S32K148.s</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 22 21</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\src\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 3</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\src\startup\system_S32K148.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 14</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 9 16 0 15 13 1 7 8 12 4 17 10 6</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug_RAM\Exe\hello_world_IAR.elf</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 21</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 20 3 5 11 14</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\src\startup\startup.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 5</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 15 13 1 7 8 12 9 16 0 4 17 10</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\src\startup\startup_S32K148.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 11</file>
+                </tool>
+            </outputs>
+        </file>
+    </configuration>
+</project>
